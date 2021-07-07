@@ -1,9 +1,10 @@
+<?php include('server.php') ?>
 <!doctype html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
-  <title>Images</title>
+  <title>register</title>
   <link rel="stylesheet" href="style.css" type="text/css" />
   <script type="text/javascript" src="main.js"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/fontawesome.min.css">
@@ -12,9 +13,7 @@
 </head>
 
 <body>
-  
   <header class="header">
-          <p class="login"><a href="login.php">Login</a></p>
     <h1>Weecode</h1>
     <p> Apparrence a voir</p>
     <div class="topnav">
@@ -25,25 +24,29 @@
       <a href="register.php">Sign-up</a>
     </div>
   </header>
-  <main class="container">
-    <h2>index</h2>
 
-
-    <div class="slider-scroll">
-      <img id="slide-scroll1" src="https://previews.123rf.com/images/demkat/demkat1702/demkat170200163/72961783-int%C3%A9rieur-de-chambre-blanche-et-grise.jpg" alt>
-
-      <img id="slide-scroll2" src="https://previews.123rf.com/images/breadmaker/breadmaker1511/breadmaker151100093/50550100-salle-%C3%A0-manger-int%C3%A9rieur-avec-hardwood-floors-%C3%A0-new-luxury-home.jpg" alt>
-      <img id="slide-scroll3" src="https://previews.123rf.com/images/bialasiewicz/bialasiewicz1612/bialasiewicz161201097/67613440-maison-int%C3%A9rieur-blanc-avec-fauteuil-vert-et-mur-de-briques.jpg" alt>
-      <img id="slide-scroll4" src="https://previews.123rf.com/images/breadmaker/breadmaker1511/breadmaker151100048/50557141-belle-pi%C3%A8ce-de-vie-avec-des-planchers-de-bois-franc-et-vue-imprenable.jpg" alt>
-    </div>
-    <ul class="ancre">
-      <li><a href="#slide-scroll1">1</a></li>
-      <li><a href="#slide-scroll2">2</a></li>
-      <li><a href="#slide-scroll3">3</a></li>
-      <li><a href="#slide-scroll4">4</a></li>
-    </ul>
-  </main>
-  <footer class="footer">
+  	<div class="input-group">
+  	  <label>Username</label>
+  	  <input type="text" name="username" value="<?php echo $username; ?>">
+  	</div>
+  	<div class="input-group">
+  	  <label>Email</label>
+  	  <input type="email" name="email" value="<?php echo $email; ?>">
+  	</div>
+  	<div class="input-group">
+  	  <label>Password</label>
+  	  <input type="password" name="password_1">
+  	</div>
+  	<div class="input-group">
+  	  <label>Confirm password</label>
+  	  <input type="password" name="password_2">
+  	</div>
+  	<div class="input-group">
+  	  <button type="submit" class="btn" name="reg_user">Register</button>
+  	</div>
+  	<p>
+  		Already a member? <a href="login.php">Sign in</a>
+  	</p>
 
     <div class="reseaux">
       <p>Réseaux sociaux</p>

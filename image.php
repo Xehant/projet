@@ -15,12 +15,12 @@
   <header class="header">
     <h1>Weecode</h1>
     <p> Apparrence a voir</p>
-    <div class="topnav">
-      <a class="active" href="index.html">Home</a>
-      <a href="news.html">News</a>
-      <a href="login.html">Login</a>
-      <a href="image.html">Images</a>
-      <a href="register.html">Sign-up</a>
+      <div class="topnav">
+      <a class="active" href="index.php">Home</a>
+      <a href="news.php">News</a>
+      <a href="login.php">Login</a>
+      <a href="image.php">Images</a>
+      <a href="register.php">Sign-up</a>
     </div>
   </header>
   <main class="container">
